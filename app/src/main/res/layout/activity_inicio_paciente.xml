@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    android:clipChildren="false"
+    tools:context=".Inicio.inicio_PacienteActivity">
+
+    <ImageView android:id="@+id/imageView22"
+        android:layout_width="0dp" android:layout_height="0dp"
+        android:visibility="gone" android:contentDescription="@null"
+        app:srcCompat="@drawable/fondo5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView android:id="@+id/scrollView4"
+        android:layout_width="0dp" android:layout_height="0dp"
+        android:fillViewport="true" android:clipToPadding="false"
+        android:scrollbars="none"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/navPaciente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical"
+            android:paddingStart="20dp" android:paddingEnd="20dp"
+            android:paddingTop="28dp" android:paddingBottom="24dp"
+            android:clipChildren="false" android:clipToPadding="false">
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:minHeight="56dp"
+                android:gravity="center_vertical" android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:id="@+id/textView30"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Hola" tools:text="Hola, yudy"
+                        android:fontFamily="sans-serif-black" android:textSize="28sp"
+                        android:includeFontPadding="false" android:textColor="#0B2E4F"/>
+                    <TextView android:id="@+id/textView31"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Tu salud es nuestra prioridad"
+                        android:fontFamily="sans-serif-medium" android:textSize="14sp"
+                        android:textColor="#4F6A7E" android:includeFontPadding="false"/>
+                </LinearLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="56dp" android:layout_height="56dp"
+                    android:layout_marginStart="12dp"
+                    app:cardCornerRadius="28dp" app:cardElevation="6dp"
+                    app:strokeColor="#FFFFFF" app:strokeWidth="3dp"
+                    app:cardBackgroundColor="#FFFFFF" app:cardPreventCornerOverlap="false">
+                    <ImageView android:id="@+id/imgfamiliar"
+                        android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:padding="6dp" android:scaleType="fitCenter"
+                        android:contentDescription="Perfil del paciente"
+                        app:srcCompat="@drawable/paciente"/>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <FrameLayout android:layout_width="match_parent"
+                android:layout_height="154dp" android:layout_marginBottom="20dp"
+                android:background="@drawable/home_banner_background"
+                android:elevation="5dp" android:clipToOutline="true"
+                android:outlineAmbientShadowColor="#5597A3"
+                android:outlineSpotShadowColor="#5597A3">
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:orientation="horizontal"
+                    android:gravity="center_vertical" android:paddingStart="22dp"
+                    android:paddingEnd="14dp" android:paddingTop="14dp" android:paddingBottom="14dp">
+                    <LinearLayout android:layout_width="0dp"
+                        android:layout_height="wrap_content" android:layout_weight="1"
+                        android:layout_marginEnd="8dp" android:orientation="vertical">
+                        <TextView android:id="@+id/textView34"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:maxWidth="170dp" android:text="Cuida tu salud en cada paso"
+                            android:fontFamily="sans-serif-black" android:textSize="22sp"
+                            android:includeFontPadding="false" android:textColor="#0B2E4F"/>
+                        <TextView android:id="@+id/textView35"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" android:text="Pequeños hábitos, grandes cambios"
+                            android:fontFamily="sans-serif-medium" android:textSize="13sp"
+                            android:includeFontPadding="false" android:textColor="#3E5C70"/>
+                        <View android:layout_width="36dp" android:layout_height="4dp"
+                            android:layout_marginTop="10dp" android:background="#17B5BE"
+                            android:importantForAccessibility="no"/>
+                    </LinearLayout>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="124dp" android:layout_height="124dp"
+                        app:cardCornerRadius="22dp" app:cardElevation="3dp"
+                        app:cardBackgroundColor="#FFFFFF" app:cardPreventCornerOverlap="false">
+                        <ImageView android:id="@+id/imgpacientevinculado"
+                            android:layout_width="match_parent" android:layout_height="match_parent"
+                            android:padding="7dp" android:scaleType="fitCenter"
+                            android:contentDescription="Ilustración médica" app:srcCompat="@drawable/medico"/>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="48dp"
+                android:layout_marginBottom="8dp" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView android:id="@+id/textView36" style="@style/HomeSectionTitle" android:text="Accesos rápidos"/>
+                <TextView android:id="@+id/textView37" style="@style/HomeSectionLink" android:text="Ver todos ›"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false">
+                <androidx.cardview.widget.CardView style="@style/HomeShortcutCard">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.imageview.ShapeableImageView android:id="@+id/imageView24" style="@style/HomeShortcutIcon" android:contentDescription="Citas médicas" app:srcCompat="@drawable/citasicono" app:shapeAppearanceOverlay="@style/HomeIconShape" />
+        <TextView android:id="@+id/textView38" style="@style/HomeShortcutLabel" android:text="Citas" />
+    </FrameLayout>
+</androidx.cardview.widget.CardView>
+<androidx.cardview.widget.CardView style="@style/HomeShortcutCard" android:layout_marginStart="12dp" android:layout_marginEnd="12dp">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.imageview.ShapeableImageView android:id="@+id/imageView27" style="@style/HomeShortcutIcon" android:contentDescription="Tratamientos" app:srcCompat="@drawable/estetoscopio" app:shapeAppearanceOverlay="@style/HomeIconShape" />
+        <TextView android:id="@+id/textView44" style="@style/HomeShortcutLabel" android:text="Tratamientos" />
+    </FrameLayout>
+</androidx.cardview.widget.CardView>
+<androidx.cardview.widget.CardView style="@style/HomeShortcutCard">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.imageview.ShapeableImageView android:id="@+id/imageView25" style="@style/HomeShortcutIcon" android:contentDescription="Medicamentos" app:srcCompat="@drawable/pildoras" app:shapeAppearanceOverlay="@style/HomeIconShape" />
+        <TextView android:id="@+id/textView40" style="@style/HomeShortcutLabel" android:text="Medicamentos" />
+    </FrameLayout>
+</androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:layout_marginBottom="20dp"
+                android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false">
+                <androidx.cardview.widget.CardView style="@style/HomeShortcutCard">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.imageview.ShapeableImageView android:id="@+id/imgrecordatorios" style="@style/HomeShortcutIcon" android:contentDescription="Recordatorios" app:srcCompat="@drawable/alarma" app:shapeAppearanceOverlay="@style/HomeIconShape" />
+        <TextView android:id="@+id/txtRecordatorios" style="@style/HomeShortcutLabel" android:text="Recordatorios" />
+    </FrameLayout>
+</androidx.cardview.widget.CardView>
+<androidx.cardview.widget.CardView style="@style/HomeShortcutCard" android:layout_marginStart="12dp" android:layout_marginEnd="12dp">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.imageview.ShapeableImageView android:id="@+id/imageView28" style="@style/HomeShortcutIcon" android:contentDescription="Historial médico" app:srcCompat="@drawable/historial" app:shapeAppearanceOverlay="@style/HomeIconShape" />
+        <TextView android:id="@+id/textView45" style="@style/HomeShortcutLabel" android:text="Historial" />
+    </FrameLayout>
+</androidx.cardview.widget.CardView>
+<androidx.cardview.widget.CardView style="@style/HomeShortcutCard">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.imageview.ShapeableImageView android:id="@+id/imageView29" style="@style/HomeShortcutIcon" android:contentDescription="Familiares" app:srcCompat="@drawable/familia2" app:shapeAppearanceOverlay="@style/HomeIconShape" />
+        <TextView android:id="@+id/textView46" style="@style/HomeShortcutLabel" android:text="Familiares" />
+    </FrameLayout>
+</androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="48dp"
+                android:layout_marginBottom="8dp" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView android:id="@+id/textView47" style="@style/HomeSectionTitle" android:text="Próxima cita"/>
+                <TextView android:id="@+id/verTodasCitas" style="@style/HomeSectionLink" android:text="Ver todas ›"/>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:cardCornerRadius="24dp"
+                app:cardElevation="4dp" app:cardBackgroundColor="#FFFFFF"
+                app:cardPreventCornerOverlap="false">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:paddingStart="16dp" android:paddingEnd="14dp"
+                    android:paddingTop="14dp" android:paddingBottom="14dp">
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imageView30" android:layout_width="54dp" android:layout_height="54dp"
+                        android:scaleType="fitCenter" android:contentDescription="Icono de cita"
+                        app:shapeAppearanceOverlay="@style/HomeIconShape" app:srcCompat="@drawable/citasicono"/>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:layout_marginStart="14dp" android:orientation="vertical">
+                        <TextView android:id="@+id/textView48"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:text="Aún no hay una próxima cita para mostrar"
+                            android:fontFamily="sans-serif" android:textStyle="bold" android:textSize="14sp"
+                            android:includeFontPadding="false" android:textColor="#0B2E4F"/>
+                        <TextView android:id="@+id/textView49" android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:visibility="gone"
+                            android:textColor="#4F6A7E" android:textSize="12sp" android:layout_marginTop="4dp"/>
+                        <TextView android:id="@+id/textView50" android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:visibility="gone"
+                            android:textColor="#0A7480" android:textSize="12sp" android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                    <TextView android:id="@+id/textView51"
+                        android:layout_width="48dp" android:layout_height="54dp" android:gravity="center"
+                        android:text="›" android:textSize="32sp" android:textColor="#0A7480"
+                        android:contentDescription="Ver detalles de la cita"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout android:id="@+id/navPaciente"
+        android:layout_width="0dp" android:layout_height="120dp"
+        android:clipChildren="false" android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <View android:layout_width="match_parent" android:layout_height="84dp"
+            android:layout_gravity="bottom" android:background="@drawable/home_nav_background"
+            android:elevation="8dp" android:outlineAmbientShadowColor="#5597A3"
+            android:outlineSpotShadowColor="#5597A3" android:importantForAccessibility="no"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="64dp"
+            android:layout_gravity="bottom" android:layout_marginBottom="10dp"
+            android:paddingStart="14dp" android:paddingEnd="14dp" android:elevation="9dp"
+            android:orientation="horizontal">
+            <FrameLayout style="@style/HomeNavItem" android:background="@drawable/home_active_background">
+                <ImageView
+                    android:id="@+id/imageView31"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:padding="6dp"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Inicio"
+                    app:srcCompat="@drawable/icono_inicio" />
+                <TextView
+                    android:id="@+id/textView52"
+                    style="@style/HomeNavLabel"
+                    android:text="Inicio"
+                    android:textColor="#0A7480"
+                    android:textStyle="bold" />
+</FrameLayout>
+            <FrameLayout style="@style/HomeNavItem">
+<ImageView android:id="@+id/imageView32" style="@style/HomeNavIcon" android:contentDescription="Citas" app:srcCompat="@drawable/citasicono"/>
+<TextView android:id="@+id/textView53" style="@style/HomeNavLabel" android:text="Citas"/>
+</FrameLayout>
+            <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <FrameLayout style="@style/HomeNavItem">
+<ImageView android:id="@+id/imageView34" style="@style/HomeNavIcon" android:contentDescription="Historial" app:srcCompat="@drawable/historial"/>
+<TextView android:id="@+id/textView54" style="@style/HomeNavLabel" android:text="Historial"/>
+</FrameLayout>
+            <FrameLayout style="@style/HomeNavItem">
+<ImageView android:id="@+id/imgperfilfamiliar" style="@style/HomeNavIcon" android:contentDescription="Perfil" app:srcCompat="@drawable/perfil"/>
+<TextView android:id="@+id/txtperfilfamiliar" style="@style/HomeNavLabel" android:text="Perfil"/>
+</FrameLayout>
+        </LinearLayout>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="64dp" android:layout_height="64dp" android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:elevation="10dp" app:cardElevation="8dp" app:cardCornerRadius="32dp"
+            app:cardPreventCornerOverlap="false" app:cardBackgroundColor="#17B5BE"
+            app:strokeWidth="5dp" app:strokeColor="#EAF8F8">
+            <ImageView android:id="@+id/imageView33"
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                android:padding="14dp" android:contentDescription="Agendar nueva cita"
+                android:scaleType="fitCenter" app:srcCompat="@drawable/mas"/>
+        </com.google.android.material.card.MaterialCardView>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCECEF">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="12dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="18dp"
+                    android:text="Menú"
+                    android:textColor="#183B70"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="14dp">
+
+                    <ImageView
+                        android:id="@+id/imgFotoMenuPaciente"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:contentDescription="Foto de perfil"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/perfil" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvNombreMenuPaciente"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#183B70"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvTipoMenuPaciente"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Paciente"
+                            android:textColor="#7890AB"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvDniPerfilPaciente"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:textColor="#183B70"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tvCorreoPerfilPaciente"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:textColor="#536A80"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E7EFF5" />
+
+                <TextView
+                    android:id="@+id/menuInicio"
+                    style="@style/ElementoMenuMediTrack"
+                    android:text="⌂    Inicio" />
+
+                <TextView
+                    android:id="@+id/menuCitas"
+                    style="@style/ElementoMenuMediTrack"
+                    android:text="▦    Citas" />
+
+                <TextView
+                    android:id="@+id/menuMedicamentos"
+                    style="@style/ElementoMenuMediTrack"
+                    android:text="♧    Medicamentos" />
+
+                <TextView
+                    android:id="@+id/menuRecordatorios"
+                    style="@style/ElementoMenuMediTrack"
+                    android:text="◷    Recordatorios" />
+
+                <TextView
+                    android:id="@+id/menuTratamientos"
+                    style="@style/ElementoMenuMediTrack"
+                    android:text="♙    Tratamientos" />
+
+                <TextView
+                    android:id="@+id/menuHistorial"
+                    style="@style/ElementoMenuMediTrack"
+                    android:text="▤    Historial" />
+
+                <TextView
+                    android:id="@+id/menuFamiliares"
+                    style="@style/ElementoMenuMediTrack"
+                    android:text="♧    Familiares" />
+
+                <TextView
+                    android:id="@+id/menuMisMedicos"
+                    style="@style/ElementoMenuMediTrack"
+                    android:text="♙    Mis médicos" />
+
+                <TextView
+                    android:id="@+id/menuConfiguracion"
+                    style="@style/ElementoMenuMediTrack"
+                    android:text="⚙    Configuración" />
+
+                <TextView
+                    android:id="@+id/menuNotificaciones"
+                    style="@style/ElementoMenuMediTrack"
+                    android:text="♧    Notificaciones" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="6dp"
+                    android:background="#F0E0E0" />
+
+                <TextView
+                    android:id="@+id/menuCerrarSesion"
+                    style="@style/ElementoMenuMediTrack"
+                    android:text="✕    Cerrar sesión"
+                    android:textColor="#E53935" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

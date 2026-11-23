@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "258122979520",
+    "project_id": "meditrack-50c60",
+    "storage_bucket": "meditrack-50c60.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258122979520:android:3df2885fe839c629a73525",
+        "android_client_info": {
+          "package_name": "com.example.meditrack2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258122979520-l4sut2uvsbpd5vs02gjt9g1gtgmnqhoe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.meditrack2",
+            "certificate_hash": "232e2eaa8e530e44d38f06a48fc3a418d6fc435e"
+          }
+        },
+        {
+          "client_id": "258122979520-pskaev12nijuqht486cevvkkepmi22cl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsaNyRxB_YmpMDCgzc7y-eO9C62jJuf1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258122979520-pskaev12nijuqht486cevvkkepmi22cl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
